@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="3D虚拟展厅" />
+	<meta name="robots" content="all" />
+	<link rel="stylesheet" href="/web360/web360gen/libs/jquery/css/simplePagination.css" type="text/css" media="screen"/>
+	<link rel="stylesheet" href="css/user.css" type="text/css" media="screen" />
+	<title>用户管理</title>
+</head>
+<body>
+	<div class='container'>
+		<div class='content head'>
+			<div class='head_center'>
+				<img src='image/role.png' title='创建用户' class='createuser'/>
+				<span title='创建用户' class='createuser'>创建用户</span>
+				<input type='text' maxlength=50 placeholder="搜索用户" id='usertext'/>
+				<button id='btnsearchuser'>搜索用户</button>
+			</div>
+		</div>
+		<hr>
+		<div class='content center'>
+			<div class='center_top'>
+				<ul>
+					<div class='ie6_out'><div class='ie6_in'><li>登录帐号</li></div></div>
+					<div class='ie6_out'><div class='ie6_in'><li>创建时间</li></div></div>
+					<div class='ie6_out'><div class='ie6_in'><li>联系人</li></div></div>
+					<div class='ie6_out'><div class='ie6_in'><li>联系电话</li></div></div>
+					<div class='ie6_out'><div class='ie6_in'><li>邮箱地址</li></div></div>
+					<div class='ie6_out'><div class='ie6_in'><li>修改信息</li></div></div>
+					<div class='ie6_out'><div class='ie6_in'><li>删除用户</li></div></div>
+				</ul>
+			</div>
+			<div class='center_center' id='userlist'>
+			</div>
+		</div>
+		<div id="page"></div>
+		<!--create user start-->
+		<div class='content_create'>
+			<div class='create_head'>
+				<span class='title_create'>
+					创建用户
+				</span>
+				<span class='close_create' title="关闭">
+					X
+				</span>
+			</div>
+			<div class='create_center'>
+				<div class='create_center_sub'>
+					<span class='mess'>用户名：</span>
+					<span class='check' id='check_name'></span>
+					<div class='clear'></div>
+					<input type='text' placeholder='用户名' id='username' maxlength=20/>
+					<b class='h2'>*</b>
+					<span class='prop'>英文和数字，数字不能开头</span>
+				</div>
+				<div class='create_center_sub'>
+					<span class='mess'>密码：</span>
+					<span class='check' id='check_password'></span>
+					<div class='clear'></div>
+					<input type='password' placeholder='密码' id='password' maxlength=20/>
+					<b class='h2'>*</b>
+					<span class='prop'>6-20个字符</span>
+				</div>
+				<div class='create_center_sub'>
+					<span class='mess'>确认密码：</span>
+					<span class='check' id='check_Newpassword'></span>
+					<div class='clear'></div>
+					<input type='password' placeholder='确认密码' id='Newpassword' maxlength=20/>
+					<b class='h2'>*</b>
+					<span class='prop'>确认密码</span>
+				</div>
+				<div class='create_center_sub'>
+					<span class='mess'>电子邮箱：</span>
+					<span class='check' id="check_email"></span>
+					<div class='clear'></div>
+					<input type='text' placeholder='邮箱地址' id='email' maxlength=40/>
+					<b class='h2'>*</b>
+					<span class='prop'>email地址</span>
+				</div>
+				<div class='create_center_sub'>
+					<span class='mess'>联系人：</span>
+					<span class='check' id='check_contact'></span>
+					<div class='clear'></div>
+					<input type='text' placeholder='联系人' id='contact' maxlength=20/>
+					<b class='h2'>*</b>
+					<span class='prop'>英文和数字，数字不能开头</span>
+				</div>
+				<div class='create_center_sub'>
+					<span class='mess'>联系方式：</span>
+					<span class='check' id='check_phone'></span>
+					<div class='clear'></div>
+					<input type='text' placeholder='联系方式' id='phone' maxlength=20/>
+					<b class='h2'>*</b>
+					<span class='prop'>联系方式</span>
+				</div>
+				<div class='create_center_sub' style='margin-top:30px;width:260px;'>
+					<button title='注册用户' id='btnregisteruser'>注册用户</button>
+				</div>
+			</div>
+		</div>
+		<!--create user end-->
+		<!--modify user start-->
+		<div class='content_modify'>
+			<div class='modify_wrap'>
+				<div class='modify_head'>
+					<img src='image/modify.png'/>
+					<span>修改用户信息</span>
+					<b>-</b>
+					<span id='exhibitionname'></span>
+					<span class='close' id='close_modify' title='关闭'>X</span>
+				</div>
+				<div class='modify_center'>
+					<div class='navbar'>
+						<div class='navbar-inner'>
+							<ul class='nav'>
+								<li class='nav_inner active' id='modify_basicmess'><a href="javascript:void(0)">基本信息修改</a></li>
+								<li class='nav_inner' id='modify_role'><a href="javascript:void(0)">用户角色修改</a></li>
+								<li class='nav_inner' id='modify_password'><a href="javascript:void(0)">密码修改</a></li>
+							</ul>
+						</div>
+						<div class='navbar-center'>
+							<iframe src="" border="0" frameborder="0" style='width:100%; height:405px;' id='modifyiframe'>
+							</iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--modify user end-->
+	</div>
+	<script type="text/javascript" src="/web360/web360gen/libs/jquery/jquery.js"></script>
+	<script type="text/javascript" src="/web360/web360gen/libs/jquery/js/jquery.simplePagination.js"></script>
+	<script type="text/javascript" src="/web360/web360gen/js/spolo.js"></script>
+	<script type="text/javascript" src="/web360/web360gen/js/mask.js"></script>
+	<script type="text/javascript" src="js/user.js"></script>
+</body>
+</html>

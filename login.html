@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head> 
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta charset="utf-8"/>
+	<title>“大工匠”机床、功能部件3D网展</title>
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-responsive.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/login.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/ieCompatible.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="libs/jquery/jquery.js"></script>
+    <script type="text/javascript" src="js/spolo.js"></script>
+    <script type="text/javascript" src="js/gdata.js"></script>
+    <script type="text/javascript" src="js/checkSession.js"></script>
+    <script type="text/javascript" src="js/ieCompatible.js"></script>
+
+</head>
+
+<body onload="correctPNG()" class="checkloging">
+	<header class="header">
+		<h1 class="site_title">
+			<a href="#" >
+				<img src="image/logo.png"/>
+			</a>
+		</h1>
+		<nav class="headerNav">
+			<a href="list.html">网站首页</a>
+			<!-- <a href="register.html" >注册</a> -->
+		</nav>
+	</header><!-- end of header-->
+	<section class="section">
+	  <div class="mainInner">
+		
+	    <div class="loginBlock">
+			<div class="sign-in" style="width: 335px; float: right;">
+				<div class="signin-box">
+					<h2>登录</h2>
+					<form novalidate id="gaia_loginform" action="" method="post">
+						<div class="email-div">
+							<label for="Email"><strong class="email-label">用户名</strong></label>
+							<input id="username" type="email" class="input-xlarge" spellcheck="false" name="Email"  value="" style="padding: 7px;" placeholder="输入用户名">
+						</div>
+						<div class="passwd-div">
+							<label for="Passwd"><strong class="passwd-label">密码</strong></label>
+							<input id="password" type="password" name="Passwd"  value="" class="input-xlarge"  placeholder="输入密码">
+						</div>
+                        <div class="captcha-div">
+                            <label for="Captcha"><strong class="captcha-label">验证码</strong></label>
+                            <input id="captchaInput" type="text" name="Captcha"  class="input-medium" value="" style="padding: 7px;">
+                            <img id="imgPic" src=""/>
+                            <a id="captchaCreate" href="#">看不清？</a>
+                        </div>
+						<a class="g-button-submit" name="signIn" id="signIn" style="margin-top:10px;">登录</a>
+					</form>
+						
+					<ul><!-- 
+					  <li id="withoutAccount">
+                          <a class="g-register" href="register.html">还没有账户？</a>
+					  </li> -->
+					  <li>
+					  	<span id="loginError"></span>
+					  </li>
+				   </ul>
+				</div><!-- end of signin-box-->
+			</div><!-- end of sign-in-->
+		</div><!-- end of loginBlock-->
+	  </div><!-- end of loginBlock-->
+	  
+	  
+	</section><!-- end of mainInner-->
+	<footer class="footer">
+		<div class="footInner">
+			<p>&copy;2013&nbsp;&nbsp;飞鹿科技&nbsp;&nbsp;版权所有&nbsp;&nbsp;京ICP证000001号</p>
+		</div>
+	</footer><!-- end of footer-->
+    <script type="text/javascript" src="js/ie6png.js"></script>
+    <script type="text/javascript" src="libs/jquery/js/jquery.placeholder.js"></script>
+    <script type="text/javascript" src="js/indexForward.js"></script>
+	<script type="text/javascript" src="js/resizelogin.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
+    
+</body>
+
+</html>

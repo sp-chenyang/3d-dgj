@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="“大工匠”机床、功能部件3D网展" />
+	<meta name="keywords" content="“大工匠”机床、功能部件3D网展" />
+	<meta name="robots" content="all" />
+	<link rel="stylesheet" href="css/exhibition.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="libs/jquery/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="libs/jquery/js/jquery.placeholder.js"></script>
+	<script type="text/javascript" src="js/ie6png.js"></script>
+	<title>“大工匠”机床、功能部件3D网展</title>
+	<!-- Bootstrap css file v2.2.1 -->
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" media="screen">
+	<!--[if lte IE 6]>
+    <link rel="stylesheet" href="css/bootstrap-ie6.min.css" type="text/css" media="screen" />
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" />
+    <![endif]-->
+</head>
+<body>
+	<!--[if lte IE 6]> 
+		<div id="ie6-warning">您正在使用 Internet Explorer 6，在本页面的部分功能不可用。建议您升级到 <a href="http://www.microsoft.com/china/windows/internet-explorer/" target="_blank">Internet Explorer 8</a> 或以下浏览器： <a href="http://www.mozillaonline.com/">Firefox</a> / <a href="http://www.google.com/chrome/?hl=zh-CN">Chrome</a> / <a href="http://www.apple.com.cn/safari/">Safari</a> / <a href="http://www.operachina.com/">Opera</a> 
+		<a class="close" id="close">x</a>
+		</div> 
+		<script type="text/javascript"> 
+		function position_fixed(el, eltop, elleft){ 
+		// check if this is IE6 
+		if(!window.XMLHttpRequest) 
+		window.onscroll = function(){ 
+		el.style.top = (document.documentElement.scrollTop + eltop)+"px"; 
+		el.style.left = (document.documentElement.scrollLeft + elleft)+"px"; 
+		} 
+		else el.style.position = "fixed"; 
+		} 
+		position_fixed(document.getElementById("ie6-warning"),0, 0);
+		$('#close').click(function(){
+			$('#ie6-warning').css("display","none")
+		});
+		$(document).ready(function(){
+			correctPNG();
+		})
+		</script> 
+	<![endif]--> 
+	<!-- <div id="header">
+		<div class="content">
+			<div class="logo_wrap">
+				<a class="logo"><img src="image/logo.png" /></a>
+			</div>
+			<div class="search_wrap">
+				<input type="text" class="search_input" placeholder="搜索展厅、商品" />
+			</div>
+		</div>
+	</div> --><!-- end of header bar -->
+	<!-- <div class="search_result_wrap">
+		<div class="search_result content">
+			<div class="search_result_head">搜索结果</div>
+			<div class="close_wrap">
+				<div class="close">x</div>
+			</div>
+			<div class="con_wrap">
+				<div class="arrowLeft">&lt;</div>
+				<div class="con">
+					
+				</div>
+				<div class="arrowRight">&gt;</div>
+			</div>
+		</div>
+	</div> -->
+<!-- 	<div id="contact_show" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-body" id="companyCon">
+			
+		</div>
+	</div>
+	<div id="intro_show" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-body" id="companyIntr">	
+				
+		</div>
+	</div> -->
+	<div id="main">
+		<div class="ifr360_wrap" id="div_ifr">
+			<iframe class="ifr360" id="center_ifrmain" src=""></iframe>
+		</div>
+	</div><!-- end of center -->
+	<!-- <div id="footer">
+		<div class="share_wrap">
+			<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+			<span class="bds_more">分享到：</span>
+			<a class="bds_qzone"></a>
+			<a class="bds_tsina"></a>
+			<a class="bds_tqq"></a>
+			<a class="bds_renren"></a>
+			<a class="bds_t163"></a>
+			<a class="shareCount"></a>
+			</div>
+			<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=6759114" ></script>
+			<script type="text/javascript" id="bdshell_js"></script>
+			<script type="text/javascript">
+			document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+			</script>
+		</div>
+		<div class="company">
+		<a href="#intro_show" data-toggle="modal"><span class="nav company_intr anim">公司介绍</span></a>
+		<a href="#contact_show" data-toggle="modal"><span class="nav contact_us anim" id="about_exus">联系我们</span></a>
+		<a><span class="nav compant_offic anim">公司官网</span></a>
+		<a id="openproduct"><span class="nav more_exhibit anim">热门展品</span></a>
+		</div>
+		<div class="toolbar_wrap">
+			<a target="_blank" href="web360gen/index.html"><span class="nav exhibition_make anim">展厅制作</span></a>
+			<a><span class="nav oprate_help anim" id="oprate_exhelp">操作帮助</span></a>
+		</div>
+		
+		<div class="copyright anim">
+
+		</div>
+	</div> --><!-- end of footer -->
+	
+	<!--  scroll pane  -->
+	<!-- <div class="scroll_pane scroll_exhibition" >
+	   <div id="scroll_content" class="scroll_content"></div>
+		<a class="close">x</a>
+	</div>
+	
+	<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+	width="400" height="300" codebase=
+	"http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#
+	version=6,0,0,0" id="swf" style="display:none">
+	<param name="movie" value="images/zf03320.swf">
+	<param name="quality" value="high">
+	<param name="bgcolor" value="#F0F0F0">
+	<param name="menu" value="false">
+	<param name="wmode" value="opaque">
+	<param name="FlashVars" value="">
+	<param name="allowScriptAccess" value="sameDomain">
+	<param name="loop" value="false">
+	<param name="play" value="false">
+
+	</object> -->
+	<script type="text/javascript" src="js/gdata.js"></script>
+	<script type="text/javascript" src="js/exhibition/exhresize.js"></script>
+	<script type="text/javascript" src="js/exhibition/scrollpane.js"></script>
+	<script type="text/javascript" src="js/exhibition/exhibition.js"></script>
+	<script type="text/javascript" src="js/exhibition/search.js"></script>
+	<script type="text/javascript" src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<!-- <script type="text/javascript" src="js/exhibition/bannar.js"></script> -->
+	<!--[if lte IE 6]>
+	<script type="text/javascript" src="js/exhibition/bootstrap-ie.js"></script>
+    <![endif]-->
+	<!-- baidu analytics start -->
+    <script type="text/javascript" src="libs/analytics/baiduAnalytics.js"></script>
+    <!-- baidu analytics end -->	
+	
+
+</body>
+</html>

@@ -1,0 +1,247 @@
+html { 
+
+} 
+
+body { 
+
+
+} 
+
+
+/*******************************************************************
+LAYOUT
+*******************************************************************/
+
+#main{
+	padding: 0px;
+	width: 1150px;
+	margin-left: auto;
+	margin-right: auto;
+	position:relative;
+}
+.login{
+	position:absolute;
+	z-index: 2;
+	width: 483px;
+	height: 90px;
+	top: 349px;
+	right: 150px;
+}
+
+.content { 
+
+
+} 
+
+.logo_wrap { 
+
+
+} 
+
+.container { 
+
+
+} 
+
+.ad-main { 
+	width: 100%;
+	height: 550px;
+	position: relative;
+	color: #fff;
+} 
+
+.ad-main-photo { 
+	background: transparent url("/web360/image/advertise/advtise.png") no-repeat;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizinMethod='scale', src="/web360/image/advertise/advtise.png");
+	_background:none;
+	width: 65%;
+	z-index: 0;
+	float: left;
+	height: 526px;
+	position:absolute;
+	left:1px;
+} 
+
+.ad-main-intro { 
+	width: 35%;
+	z-index: 2;
+	position: absolute;
+	right: 0px;
+	margin-top: 80px;
+} 
+
+.ad-main-intro ul{ 
+	width: 290px;
+	margin-top:10px;
+} 
+.ad-main-intro li{ 
+	font-size: 16px;
+	margin-bottom: 10px;
+} 
+
+.ad-main-adIcon { 
+	position: absolute;
+	z-index: 2;
+	top: -76px;
+	right:0px;
+
+} 
+.ad-main-adIcon a{
+	display: inline-block;
+	_display: inline;
+	_zoom:1;
+}
+/*首页的广告图标*/
+.ad-main-adIcon-index { 
+	position: absolute;
+	z-index: 2;
+	top: -76px;
+	right:0px;
+
+}
+/*视频教学的广告图标*/
+.ad-main-adIcon-video { 
+	position: absolute;
+	z-index: 2;
+	top: -80px;
+	right:0px;
+
+}
+
+.ad-main-cover { 
+	background: transparent url("/web360/image/advertise/cover.png") no-repeat;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizinMethod='scale', src="/web360/image/advertise/cover.png");
+	_background:none;
+	width:100%;
+	height:550px;
+	z-index: 1;
+	position: absolute;
+	left:0px;
+} 
+
+.ad-main-cover-banner { 
+	background: transparent url("/web360/image/advertise/cter.png") no-repeat;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizinMethod='scale', src="/web360/image/advertise/cter.png");
+	_background:none;
+	width:850px;
+	height: 190px;
+	margin-top: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 64px;
+	position: relative;
+} 
+
+.ad-main-cover-banner-left, 
+.ad-main-cover-banner-right { 
+width: 483px;
+height: 90px;
+position: absolute;
+text-align: center;
+} 
+.ad-main-cover-banner-left p
+{ 
+font-size: 39px;
+vertical-align: middle;
+line-height: 90px;
+height:90px;
+} 
+.ad-main-cover-banner-left { 
+left:0px;
+top:0px;
+} 
+
+.ad-main-cover-banner-right { 
+right:0px;
+bottom:0px;
+line-height: 90px;
+} 
+.ad-main-cover-banner-right p{
+	vertical-align: middle;
+	display: inline-block;
+	_display: inline;
+	_zoom: 1;
+}
+
+.ad-main-cover-banner-right a
+{
+	
+}
+.ad-main-cover-banner-right span{
+	margin-right: 30px;
+	display:inline-block;
+	display: inline\9;
+	zoom: 1\9;
+}
+.ad-main-cover-banner-right span.text
+{
+	margin-left: 45px;
+	font-size: 39px;
+	vertical-align: baseline;
+	cursor: pointer;
+}
+.ad-main-cover-banner-right span.image
+{
+	font-size: 39px;
+	vertical-align: baseline;
+	position: relative;
+	top: 10px\9;
+}
+
+.ad-main-cover-banner-right a img
+{
+	
+}
+
+.ad-mian-cover-foot { 
+
+
+} 
+
+.ad-mian-cover-foot h3{ 
+	margin-left: 40px;
+	float:left;
+
+} 
+
+.ad-main-cover-more{
+	float: right;
+	margin-right: 40px;
+	font-size: 24.5px;
+}
+
+.ad-favorable-list { 
+
+
+} 
+.ad-favorable-item{
+	line-height: 72px;
+	width: 241px;
+	height: 68px;
+	text-align: center;
+	padding-left: 60px;
+	padding-top: 5px;
+	color: #fff;
+	font-weight: normal;
+}
+.ad-favorable-list p{
+	font-size: 14px;
+}
+.step{
+	width: 253px;
+	display: block;
+	margin: auto;
+
+}
+.step1{
+	background: transparent url("/web360/image/advertise/step1.png") no-repeat;
+}
+.step2{
+	background: transparent url("/web360/image/advertise/step2.png") no-repeat;
+}
+.step3{
+	background: transparent url("/web360/image/advertise/step3.png") no-repeat;
+}
+.ad-favorable-list .span4{
+	float:left;
+}

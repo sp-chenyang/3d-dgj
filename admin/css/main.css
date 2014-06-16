@@ -1,0 +1,99 @@
+/* Essentials */
+
+html, div, dt {  
+    display: block;  
+} 
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft Yahei", Helvetica, Arial, Verdana, sans-serif;
+	background: #F8F8F8;
+	font-size: 12px;
+	overflow-y: auto;
+}
+a
+{
+	text-decoration: none;
+	color:#000;
+}
+.clear 
+{
+	clear: both;
+}
+.container
+{
+	width:100%;
+	margin:0 auto;
+	height:auto;
+}
+.content
+{
+	width:1260px;
+	margin:0 auto;
+}
+.head
+{
+	height:50px;
+	margin-top:30px;
+}
+.head span.title
+{
+	font-size:25px;
+	font-weight:900;
+	width:200px;
+	display:inline-block;
+}
+.head span.nav
+{
+	font-size:14px;
+	font-weight:900;
+	display:inline-block;
+	cursor:pointer;
+	color:#ccc;
+}
+.head span.nav.active
+{
+	color:#000;
+}
+b.b1{
+	margin:0 30px;
+}
+b.b2
+{
+	display:inline;
+	margin:0;
+	padding:0;
+}
+.center
+{
+	width:100%;
+	min-height:650px;
+	height:650px;
+}
+hr
+{
+	width:98%;
+	margin:0 auto;
+	border:1px solid;
+	color:#757373;
+}
+.head_right
+{
+	width:300px;
+	float:right;
+}
+.head_right a
+{
+	width:90px;
+	display:inline-block;
+	text-align:center;
+}
+.head_right a#currentUser
+{
+	min-width:90px;
+	max-width:90px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow:hidden;
+}

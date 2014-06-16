@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>订单管理</title>
+	<link rel="stylesheet" href="/web360/web360gen/libs/jquery/css/simplePagination.css" type="text/css" media="screen"/>
+	<link rel="stylesheet" href="css/orders.css" type="text/css" media="screen"/>
+</head>
+<body>
+	<div class='container'>
+		<div class='content head'>
+			<ul>
+				<div class='ie6_out'><div class='ie6_in'><li>订单编号</li></div></div>
+				<div class='ie6_out'><div class='ie6_in'><li>联系人</li></div></div>
+				<div class='ie6_out'><div class='ie6_in'><li>下单时间</li></div></div>
+				<div class='ie6_out'><div class='ie6_in'><li>联系电话</li></div></div>
+				<div class='ie6_out'><div class='ie6_in'><li>邮箱地址</li></div></div>
+				<div class='ie6_out'><div class='ie6_in'><li>处理订单</li></div></div>
+			</ul>
+		</div>
+		<div class='content center' id='orderlist'>	
+		</div>
+		<div id='page'>
+		
+		</div>
+		<!-- 订单关联用户 start -->
+		<div class='relorder'>
+			<div class='relorder_content relorder_head'>
+				<div class='relorder_head_top'>
+					<span class='title'>
+						处理订单(订单关联用户)
+					</span>
+					<span class='close' title="关闭">
+						X
+					</span>
+				</div>
+				<div class='relorder_head_center'>
+					<img src='image/role.png' title='创建用户' class='createuser'/>
+					<span title='创建用户' class='createuser'>创建用户</span>
+					<input type='text' maxlength=50 placeholder="搜索用户" id='usertext'/>
+					<button id='btnsearchuser'>搜索用户</button>
+				</div>
+			</div>
+			<hr>
+			<div class='relorder_content relorder_center'>
+				<div class='relorder_center_top'>
+					<ul>
+						<div class='ie6_out_user'><div class='ie6_in_user'><li>登录帐号</li></div></div>
+						<div class='ie6_out_user'><div class='ie6_in_user'><li>创建时间</li></div></div>
+						<div class='ie6_out_user'><div class='ie6_in_user'><li>联系人</li></div></div>
+						<div class='ie6_out_user'><div class='ie6_in_user'><li>联系电话</li></div></div>
+						<div class='ie6_out_user'><div class='ie6_in_user'><li>邮箱地址</li></div></div>
+						<div class='ie6_out_user'><div class='ie6_in_user'><li>选择用户</li></div></div>
+					</ul>
+				</div>
+				<div class='relorder_center_center' id='userlist'>
+				</div>
+			</div>
+			<div id='userpage'>
+				
+			</div>
+		</div><!--订单关联用户 end-->
+		<!--创建用户 start-->
+		<div class='content_create'>
+			<div class='create_head'>
+				<span class='title_create'>
+					创建用户
+				</span>
+				<span class='close_create' title="关闭">
+					X
+				</span>
+			</div>
+			<div class='create_center'>
+				<div class='create_center_sub'>
+					<span class='mess'>用户名：</span>
+					<span class='check' id='check_name'></span>
+					<div class='clear'></div>
+					<input type='text' placeholder='用户名' id='username' maxlength=20/>
+					<b class='h2'>*</b>
+					<span class='prop'>英文和数字，数字不能开头</span>
+				</div>
+				<div class='create_center_sub'>
+					<span class='mess'>密码：</span>
+					<span class='check' id='check_password'></span>
+					<div class='clear'></div>
+					<input type='password' placeholder='密码' id='password' maxlength=20/>
+					<b class='h2'>*</b>
+					<span class='prop'>6-20个字符</span>
+				</div>
+				<div class='create_center_sub'>
+					<span class='mess'>确认密码：</span>
+					<span class='check' id='check_Newpassword'></span>
+					<div class='clear'></div>
+					<input type='password' placeholder='确认密码' id='Newpassword' maxlength=20/>
+					<b class='h2'>*</b>
+					<span class='prop'>确认密码</span>
+				</div>
+				<div class='create_center_sub'>
+					<span class='mess'>电子邮箱：</span>
+					<span class='check' id="check_email"></span>
+					<div class='clear'></div>
+					<input type='text' placeholder='邮箱地址' id='email' maxlength=40/>
+					<b class='h2'>*</b>
+					<span class='prop'>email地址</span>
+				</div>
+				<div class='create_center_sub'>
+					<span class='mess'>联系人：</span>
+					<span class='check' id='check_contact'></span>
+					<div class='clear'></div>
+					<input type='text' placeholder='联系人' id='contact' maxlength=20/>
+					<b class='h2'>*</b>
+					<span class='prop'>联系人</span>
+				</div>
+				<div class='create_center_sub'>
+					<span class='mess'>联系方式：</span>
+					<span class='check' id='check_phone'></span>
+					<div class='clear'></div>
+					<input type='text' placeholder='联系方式' id='phone' maxlength=20/>
+					<b class='h2'>*</b>
+					<span class='prop'>英文和数字，数字不能开头</span>
+				</div>
+				<div class='create_center_sub' style='margin-top:30px;width:260px;'>
+					<button title='注册并选中此用户' id='btnregisteruser'>注册并选中此用户</button>
+				</div>
+			</div>
+		</div><!--创建用户 end-->
+	</div>
+	<script type="text/javascript" src="/web360/web360gen/libs/jquery/jquery.js"></script>
+	<script type="text/javascript" src="/web360/web360gen/libs/jquery/js/jquery.simplePagination.js"></script>
+	<script type="text/javascript" src="/web360/web360gen/js/spolo.js"></script>
+	<script type="text/javascript" src="js/order.js"></script>
+	<!-- baidu analytics start -->
+    <script type="text/javascript" src="/web360/web360gen/libs/analytics/baiduAnalytics.js"></script>
+    <!-- baidu analytics end -->
+</body>
+</html>

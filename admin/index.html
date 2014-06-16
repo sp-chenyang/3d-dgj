@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>Glue360管理中心</title>
+	<link rel="stylesheet" href="css/main.css" type="text/css" media="screen"/>
+	<script type="text/javascript" src="/web360/web360gen/libs/jquery/jquery.js"></script>
+	<script type="text/javascript" src="/web360/web360gen/js/spolo.js"></script>
+	<script type="text/javascript" src="js/checklogin.js"></script>
+</head>
+<body>
+	<div class='container'>
+		<div class='content head'>
+			<span class='title'>
+				管理中心
+			</span>
+			<span class='nav active' title='订单管理' id='ordermgr'>
+				订单管理
+			</span>
+			<b class='b1'>|</b>
+			<span class='nav' title='用户管理' id='usermgr'>
+				用户管理
+			</span>
+			<div class='head_right'>
+				<a title='首页'  href='../index.html'>首页</a>
+				<a id='currentUser' href='javascript:void(0)'></a>
+				<a title='退出' href='javascript:void(0)' id='logout'>退出</a>
+			</div>
+		</div>
+		<!-- <b class='b2'>▲</b> -->
+		<hr>
+		<div class='content center'>
+			<iframe src="orders/index.html" border="0" frameborder="0" style='width:100%; height:98%;' id='mgrcont'>
+				
+			</iframe>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/main.js"></script>
+	<!-- baidu analytics start -->
+    <script type="text/javascript" src="/web360/web360gen/libs/analytics/baiduAnalytics.js"></script>
+    <!-- baidu analytics end -->
+</body>
+</html>

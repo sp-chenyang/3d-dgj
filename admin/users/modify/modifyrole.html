@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="3D虚拟展厅" />
+	<meta name="robots" content="all" />
+	<link rel="stylesheet" href="css/modifyrole.css" type="text/css" media="screen" />
+	<title>用户角色修改</title>
+</head>
+<body>
+	<div class='container'>
+		<div class='content'>
+			<div class='h3'>
+				<span class='mess'>用户：</span>
+				<span class='h2' id='edituser'></span>
+			</div>
+		</div>
+		<div class='content'>
+			<div class='h3'>
+				<span class='mess'>角色：</span>
+				<select class='h2' id='role'>
+					<option value ="user">普通用户</option>
+					<option value ="maker">制作人员</option>
+					<option value="admin">管理员</option>
+				</select>
+			</div>
+		</div>
+		<div class='content' style='margin-top:30px;width:160px;'>
+			<button title='确认修改' id='btnsurerole'>确认修改</button>
+		</div>
+	</div>
+	<script type="text/javascript" src="/web360/web360gen/libs/jquery/jquery.js"></script>
+	<script type="text/javascript" src="/web360/web360gen/js/spolo.js"></script>
+	<script type="text/javascript" src="/web360/web360gen/js/mask.js"></script>
+	<script type="text/javascript" src="js/modifyrole.js"></script>
+</body>
+</html>

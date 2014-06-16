@@ -1,0 +1,203 @@
+﻿/* Essentials */
+
+* {
+	font: 12px/1.5 'Microsoft Yahei',tahoma,arial,'\5b8b\4f53';
+	font-weight: normal;
+	color: #666;
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+img{
+	vertical-align:top;
+	border:none;
+}
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, 
+li, pre, form, fieldset, legend, button, input, textarea, th, td {
+	margin: 0;
+	padding: 0;
+}
+
+ul, ol{
+	list-style: none;
+}
+
+.clear {
+	clear: both;
+}
+
+
+a:link, a:visited {
+	color: #77BACE;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+*:focus { outline: none; }
+
+/* Header */
+#header .search_wrap {
+	margin: 28px 0 0 100px;
+}
+.search_input{
+	float:right;
+}
+/* ---------------页面内容------------------ */
+
+#product{
+	width:1190px;
+}
+
+.product{
+	position: relative;
+	cursor: default;
+	max-width:1400px;
+	min-height:500px;
+	text-align:center;
+	margin:0 auto;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	-ms-transition: all 0.1s linear;
+	-o-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+
+.prd-layout-title{
+	height:70px;
+	background-color:#ccc;
+	border:5px #;
+	padding: 15px;
+}
+
+.cpy-logo{
+	float:left;
+	line-height:40px;
+	vertical-align: center;
+}
+
+
+.prd-layout-sider{
+	height:auto;
+}
+
+.prd-hot_prd{
+	padding:5px;
+}
+
+.prd-hot-tt{
+	text-align: left;
+	font-size: 16px;
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.prd-hot-ctr{
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.prd-hot-list{
+	text-align: left;
+	padding: 0px;
+	display: inline;
+}
+.prd-hot-ctr li{
+	display:inline;
+	padding: 0px;
+	width: 228px;
+	margin-right: 6px;
+	margin-left: 6px;
+	float: left;
+}
+.prd-hot-ctr-item{
+	text-align: left;
+	background: #fff;
+	-webkit-transition: all .5s;
+	-o-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+	margin-top: 18px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 1px solid #E6E4E4;
+	box-shadow: 0px 0px 1px rgba(34, 25, 25, 0.1);
+	-moz-box-shadow: 2px 2px 10px rgba(34, 25, 25, 0.1);
+	-webkit-box-shadow: 0px 0px 1px rgba(34, 25, 25, 0.1);
+}
+.prd-hot-ctr-item-hrf{
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+	height: 200px;
+	display: block;
+}
+
+.prd-hot-ctr-item:hover{
+	-webkit-box-shadow: 2px 2px 10px rgba(50, 50, 50, 0.43);
+	-moz-box-shadow: 2px 2px 10px rgba(50, 50, 50, 0.43);
+	box-shadow: 2px 2px 10px rgba(50, 50, 50, 0.43);
+}
+
+.prd-hot-ctr-img{
+	width: auto;
+	height: auto;
+	margin: 0px auto;
+
+}
+.prd-hot-ctr-img img{
+	width: 100%;
+}
+
+.prd-hot-ctr-info{
+	height: 18px;
+	line-height: 18px;
+	padding: 10px 13px 0px;
+}
+
+.prd-hot-ctr-name{
+
+}
+
+.prd-hot-ctr-name h4{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.prd-hot-ctr-name a,
+.prd-hot-ctr-name a:link,
+.prd-hot-ctr-name a:visited
+{
+	font-size: 14px;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #000000;
+}
+
+.prd-hot-ctr-name a:hover{
+	color: #77BACE;
+	border:1px solid #;
+}
+
+.prd-layout-body{
+
+}
+.product-hr{
+	height: 25px;
+	width: 960px;
+	border-bottom: 1px solid #bbb;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}

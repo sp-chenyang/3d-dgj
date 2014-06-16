@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="“大工匠”机床、功能部件3D网展" />
+	<meta name="keywords" content="“大工匠”机床、功能部件3D网展" />
+	<meta name="robots" content="all" />
+    <!--[if lte IE 6]>
+	<style type="text/css">
+    .scroll_pane{ 
+        width :1170px;
+    }
+    </style>
+    <![endif]-->
+	<title>“大工匠”机床、功能部件3D网展</title>
+    <script type="text/javascript" src="js/ie6png.js"></script>  
+	<script type="text/javascript">
+		var Client = {
+			viewportWidth: function() {
+				return self.innerWidth || (document.documentElement.clientWidth || document.body.clientWidth);
+			},        
+			viewportHeight: function() {
+				return self.innerHeight || (document.documentElement.clientHeight || document.body.clientHeight);
+			}, 
+			viewportSize: function() {
+				return { width: this.viewportWidth(), height: this.viewportHeight() };
+			}
+		};
+	</script>
+</head>
+<body style="text-align:center;margin:0 auto;">
+<div id="notice_text" class="scroll_content" style="width:1000px;text-align:center;align:center;position:absolute;">
+   <img src="image/sqs.jpg" width="900" height="650" >
+</div>
+</body>
+<script type="text/javascript">
+	function initIndex(){
+		var w = Client.viewportWidth();
+		var d = document.getElementById("notice_text");
+		d.style.left = (w-900)/2 +'px';
+	}
+	
+	window.onresize = function(){
+		initIndex();	
+	};
+	initIndex();
+</script>
+</html>

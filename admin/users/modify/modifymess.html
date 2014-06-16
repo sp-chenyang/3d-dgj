@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="3D虚拟展厅" />
+	<meta name="robots" content="all" />
+	<link rel="stylesheet" href="css/modifymess.css" type="text/css" media="screen" />
+	<title>基本信息修改</title>
+</head>
+<body>
+	<div class='container'>
+		<div class='content'>
+			<span class='check' id='check_contact'></span>
+			<div class='clear'></div>
+			<div class='h3'><span class='mess'>联系人：</span></div>
+			<input type='text' placeholder='联系人' id='contact' maxlength=20/>
+			<b class='h2'>*</b>
+			<span class='prop'>英文和数字组成，且数字不能开头</span>
+		</div>
+		<div class='content'>
+			<span class='check' id='check_phone'></span>
+			<div class='clear'></div>
+			<div class='h3'><span class='mess'>联系电话：</span></div>
+			<input type='text' placeholder='联系电话' id='phone' maxlength=50/>
+			<b class='h2'>*</b>
+			<span class='prop'>由数字组成</span>
+		</div>
+		<div class='content'>
+			<span class='check' id='check_email'></span>
+			<div class='clear'></div>
+			<div class='h3'><span class='mess'>邮箱地址：</span></div>
+			<input type='text' placeholder='邮箱地址：' id='email' maxlength=20/>
+			<b class='h2'>*</b>
+			<span class='prop'>邮箱地址</span>
+		</div>
+		<div class='content' style='margin-top:30px;width:160px;'>
+			<button title='确认修改' id='btnbassure'>确认修改</button>
+		</div>
+	</div>
+	<script type="text/javascript" src="/web360/web360gen/libs/jquery/jquery.js"></script>
+	<script type="text/javascript" src="/web360/web360gen/js/spolo.js"></script>
+	<script type="text/javascript" src="/web360/web360gen/js/mask.js"></script>
+	<script type="text/javascript" src="js/modifymess.js"></script>
+</body>
+</html>

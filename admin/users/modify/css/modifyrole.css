@@ -1,0 +1,80 @@
+div
+{  
+    display: block;  
+} 
+
+html, body 
+{
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft Yahei";
+	background: #F8F8F8;
+	font-size: 12px;
+	
+}
+ul,li
+{
+	list-style:none;
+}
+a
+{
+	text-decoration:none;
+	color:#000;
+}
+*:focus
+{
+	outline:none;
+}
+.clear
+{
+	clear:both;
+}
+.container
+{
+	width:550px;
+	margin:0 auto;
+	height:300px;
+	vertical-align: middle;
+	margin-top:100px;
+}
+.container .content
+{
+	width:380px;
+	margin:0 auto;
+	height:60px;
+}
+.container .content span.mess
+{
+	font-size:18px;
+	width:150px;
+	display:inline-block;
+}
+.h2
+{
+	font-size:16px;
+	font-weight: bold;
+	width:120px;
+	display:inline-block;
+}
+.h3
+{
+	display: inline-block;
+	_zoom:1;
+	_display:inline;
+	width:100%;
+}
+.content button
+{
+	font-size: 16px;
+	margin-top:30px;
+	width: 120px;
+	margin:0 auto;
+	height: 30px;
+	color: #ffffff;
+	background-color: #f90;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	border: 1px solid #cccccc;
+	letter-spacing: 1px;
+	cursor: pointer;
+	text-align: center;
+}

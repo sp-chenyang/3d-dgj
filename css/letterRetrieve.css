@@ -1,0 +1,231 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#main{
+	padding: 0px;
+	overflow: auto;
+	width: 1190px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.letter-retrieve a,
+.letter-retrieve a:link,
+.letter-retrieve a:visited
+{
+	color:#000;
+}
+.letter-retrieve a:hover
+{
+	color:#0088cc;
+}
+.letter-retrieve { 
+	width:auto;
+	height:auto;
+	background: #fffafa;
+	padding: 20px;
+} 
+
+.letter-retrieve-head { 
+	text-align:center;
+	font-size: 14px;
+} 
+
+.letter-list { 
+	border-top: 1px solid #c0c0c0;
+	border-bottom: 2px solid #000000;
+	display: inline-block;
+} 
+*html .letter-list { 
+	display: inline;
+} 
+
+.letter-box { 
+	border-right: 1px solid #c0c0c0;
+	padding: 10px 15px;
+	float: left;
+	font-weight: bold;
+	background-color: #ffffff;
+} 
+
+.letter-all { 
+	border-left: 1px solid #c0c0c0;
+
+} 
+
+.letter-hvr {
+	background-color: #000000;
+	color: #fff;
+}
+
+.letter-selected {
+	background-color: #000000;
+	color: #fff;
+}
+
+.letter-box { 
+	cursor:pointer;
+
+} 
+
+.letter-retrieve-main { 
+
+
+} 
+
+.letter-retrieve-list { 
+	padding: 20px;
+
+} 
+
+.letter-retrieve-item { 
+
+
+} 
+
+.letter-title-box { 
+
+
+} 
+
+.title-bak{
+	width:200px;
+	height:20px;
+	float:left;
+	text-indent: 24px;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.title-rig{
+	float:left;
+	margin-left: -15px;
+}
+.title-shd{
+	clear:left;
+}
+.arrow-left {
+	width: 0px;
+	height: 0px;
+	border-top: 0px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-right: 10px solid #C8C8C8;
+	overflow: hidden;
+	margin:0px;
+}
+
+*html .arrow-left {
+	border-top: 0px dashed #000000;
+	border-bottom: 10px dashed #000000;
+}
+
+.letter-retrieve-result-list { 
+	margin-left: 10px;
+	padding: 35px 25px;
+	background-color:#fff;
+	display:inline-block;
+} 
+
+.letter-retrieve-result-item { 
+	float: left;
+	padding: 10px 10px;
+	width: 200px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+
+} 
+
+.letter-retrieve-result-item { 
+
+
+} 
+
+.letter-retrieve-result-more { 
+	background: #E1E1E9;
+	width: 40px;
+
+}
+.radius-box{
+	display: inherit;
+	border:1px solid #e1e1e8;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+}
+.pacman1{
+	width:0px;
+	height:0px;
+	overflow: hidden;
+	border-right: 15px solid #fffafa;
+	border-top: 10px solid transparent;
+	border-left: 0px solid transparent;
+	border-bottom: 10px solid transparent;
+}
+
+*html .pacman1{
+	border-top: 10px dashed #000000;
+	border-bottom: 10px dashed #000000;
+}
+.linearBg1 {
+  
+  /* fallback */
+  background-color: #A0A0A0;
+
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, left top, right top, from(#686868), to(#A0A0A0));
+  /* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(left, #686868, #A0A0A0 );
+
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(left, #686868, #A0A0A0);
+
+  /* IE 10 */
+  background: -ms-linear-gradient(left, #686868, #A0A0A0);
+
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(left, #686868, #A0A0A0);
+}
+.shadow-box{
+	-webkit-box-shadow: 2px 2px 10px rgba(50, 50, 50, 0.43);
+	-moz-box-shadow:    2px 2px 10px rgba(50, 50, 50, 0.43);
+	box-shadow:         2px 2px 10px rgba(50, 50, 50, 0.43);
+}
+.icons-more{
+	margin: 0px;
+	padding: 0px;
+	background: #AAAAAA;
+	color: #fff;
+	width: 16px;
+	height: auto;
+	border-radius: 8px;
+	text-align: center;
+	display: inline-block;
+	font-style: normal;
+}
+.scrollUp {
+	position: fixed;
+	bottom: 100px;
+	right: 20px;
+	height: 38px;
+	width: 38px;
+	z-index: 2147483647;
+	_zoom: 1;
+	background: url("../image/top.png") no-repeat;
+}
+.glue_right{
+	background: #fff;
+	margin-left: 0px;
+}
+#footer{
+	width: 100%;
+	height: 100px;
+	z-index: 1;
+	margin-top: 0px;
+	position: relative;
+	background: #fff;
+	border-top: 0px solid #ccc;
+}
+*html,*html body{background-image:url(about:blank);background-attachment:fixed}
+*html .scrollUp{position:absolute;left:expression(eval(document.documentElement.scrollLeft+document.documentElement.clientWidth-this.offsetWidth)-(parseInt(this.currentStyle.marginLeft,10)||0)-(parseInt(this.currentStyle.marginRight,10)||0));top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)))}

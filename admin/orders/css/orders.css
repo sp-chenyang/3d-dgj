@@ -1,0 +1,334 @@
+div
+{  
+    display: block;  
+} 
+
+html, body 
+{
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft Yahei";
+	background: #F8F8F8;
+	font-size: 12px;
+}
+ul,li
+{
+	list-style:none;
+	margin: 0;
+	padding: 0;
+}
+*:focus
+{
+	outline:none;
+}
+.clear
+{
+	clear:both;
+}
+.container
+{
+	width:1260px;
+	margin:0 auto;
+	position:relative;
+	/* border:1px solid #ccc; */
+}
+.content
+{
+	width:100%;
+}
+.head
+{
+	height:30px;
+	margin-top:30px;
+}
+.head ul
+{
+	width:1200px;
+	margin:0 auto;
+}
+.head li
+{
+	/* width:200px;
+	float:left;
+	display:inline-block; */
+	font-size:14px;
+	font-weight:900;
+	/* text-align:center; */
+}
+.center
+{
+	height:500px;
+}
+.center ul
+{
+	width:1200px;
+	height:30px;
+	margin:0 auto;
+}
+.center li,.head li
+{
+	max-width:200px;
+	min-width:200px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	float:left;
+	display:inline-block;
+	font-size:12px;
+	text-align:center;
+	overflow:hidden;
+}
+#page
+{
+	width:600px;
+	margin:0 auto;
+}
+#userpage
+{
+	width:600px;
+	margin:0 auto;
+}
+.relorder
+{
+	width:1000px;
+	height:590px;
+	position:absolute;
+	top:10px;
+	background-color:#fff;
+	border:1px solid #ccc;
+	margin:0 auto;
+	left:120px;
+	display:none;
+	z-index:99;
+}
+.relorder_content
+{
+	width: 960px;
+	margin:0 auto;
+	margin-top:10px;
+}
+.relorder_head
+{
+	height:100px;
+	margin-top:5px;
+}
+hr
+{
+	width: 960px;
+	margin:0 auto;
+	border:1px dashed #ccc;
+	margin-top:10px;
+}
+.relorder_head_top
+{
+	height:30px;
+	margin-top:10px;
+}
+.relorder_head_top span.title
+{
+	margin-left: 350px;
+	font-size:17px;
+	font-weight:900;
+	letter-spacing: 3px;
+}
+.relorder_head_top span.close
+{
+	float:right;
+	font-size:20px;
+	font-weight:900;
+	cursor:pointer;
+}
+.relorder_head_center
+{
+	height:50px;
+	margin-top:10px;
+}
+.relorder_head_center span
+{
+	line-height:70px;
+	margin-right: 150px;
+	cursor:pointer;
+}
+.relorder_head_center img
+{
+	vertical-align: middle;
+	cursor:pointer;
+}
+.relorder_head_center input
+{
+	width:400px;
+	height:30px;
+	border: 1px solid #ccc;
+}
+input:focus
+{
+	border-color: #51a7e8;
+	box-shadow: inset 0 1px 2px rgba(0,0,0,0.075),
+	0 0 5px rgba(81,167,232,0.5);
+}
+.relorder_head_center button
+{
+	font-size: 16px;
+	width: 120px;
+	height: 30px;
+	color: #ffffff;
+	background-color: #48BBE7;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	border: 1px solid #cccccc;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+.relorder_center_top ul
+{
+	width: 920px;
+	margin:0 auto;
+	height:30px;
+}
+.relorder_center_top li
+{
+	/* width:150px;
+	float:left;
+	display:inline-block; */
+	font-size:14px;
+	font-weight:900;
+	/* text-align:center; */
+}
+.relorder_center_center
+{
+	height: 320px;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+.relorder_center_center ul
+{
+	width:920px;
+	margin:0 auto;
+	height:30px;
+}
+.relorder_center_center li,.relorder_center_top li
+{
+	max-width:150px;
+	min-width:150px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	float:left;
+	display:inline-block;
+	font-size:12px;
+	text-align:center;
+	overflow:hidden;
+}
+.content_create
+{
+	width: 450px;
+	height: 520px;
+	position: absolute;
+	top: 0px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	margin: 0 auto;
+	left: 100px;
+	display:none;
+	z-index:9999;
+}
+.create_head
+{
+	width:400px;
+	margin:0 auto;
+	height:80px;
+	margin-top:15px;
+}
+.create_head .title_create
+{
+	margin-left:150px;
+	font-size:20px;
+	font-weight:900;
+	letter-spacing: 3px;
+}
+.create_head .close_create
+{
+	float:right;
+	font-size:20px;
+	font-weight:900;
+	cursor:pointer;
+}
+.create_center
+{
+	width:400px;
+	margin:0 auto;
+}
+.create_center .create_center_sub
+{
+	width:380px;
+	margin:0 auto;
+	height:50px;
+}
+.create_center .create_center_sub span.check
+{
+	font-size:12px;
+	color:#dd4b39;
+	margin-left:20px;
+}
+.create_center .create_center_sub span.mess
+{
+	font-size:14px;
+}
+.create_center .create_center_sub input
+{
+	width:200px;
+	height:25px;
+	border:1px solid #ccc;
+}
+.h2
+{
+	vertical-align:middle;
+	color:red;
+}
+.create_center .create_center_sub span.prop
+{
+	font-size:12px;
+	color:#dd4b39;
+	font-weight:900;
+}
+.create_center_sub button
+{
+	font-size: 16px;
+	margin-top:30px;
+	width: 260px;
+	margin:0 auto;
+	height: 30px;
+	color: #ffffff;
+	background-color: #f90;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	border: 1px solid #cccccc;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+.ie6_out
+{
+	_display:inline;
+	_margin-left:200px;
+	_text-align:center;
+	_zoom:1;
+}
+.ie6_in
+{
+	_display:inline;
+	_margin-left:-200px;
+	_position:relative;
+	_text-align:center;
+	_float:left;
+}
+.ie6_out_user
+{
+	_display:inline;
+	_margin-left:150px;
+	_text-align:center;
+	_zoom:1;
+}
+.ie6_in_user
+{
+	_display:inline;
+	_margin-left:-150px;
+	_position:relative;
+	_text-align:center;
+	_float:left;
+}

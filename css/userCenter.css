@@ -1,0 +1,384 @@
+/*
+ * 销售宝 -- 如何制作
+ */
+
+/* ==========================================================================
+   section styles
+   ========================================================================== */
+
+.mainInner {
+    width: 100%;
+    padding-top: 1px;
+    height: auto;
+    overflow: visible;
+    margin: 0 auto;
+    position: relative;
+    clear: both;
+    background-image: url(../../image/userCenter/user_center_bg.png);
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+}
+
+.container{
+	background-color: #fff;
+}
+.center-content{
+	width: 990px;
+	margin-top: 121px;
+	font-size: 16px;
+	font-weight: bold;
+	display: block;
+	position: relative;
+}
+.center-content a{
+	color: #0083b3;
+}
+
+.title-bar{
+	width:100%;
+	height: 47px;
+	border-bottom: 1px solid #aaa;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.title-bar h1{
+	font-size: 22px;
+	margin: 4px 0px;
+	float: left;
+}
+.content-bar{
+
+}
+.right{
+	float: right;
+	margin-left:0px;
+}
+
+.left{
+	float: left;
+}
+
+.rlink{
+	margin-top: 10px;
+	margin-right: 28px;
+}
+.pleft{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.pright{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+h1.title-lb{
+	margin-left:17px;
+}
+.phone-lb{
+	margin-right:35px;
+}
+.marginT7,
+h2.marginT7
+{
+	margin-top:7px;
+}
+.marginT0
+h2.marginT0
+{
+	margin-top:0px;
+}
+.marginL500,
+p.marginL500{
+	margin-left:500px;
+}
+.marginL300,
+p.marginL300,
+span.marginL300{
+	margin-left:300px;
+}
+
+.top70{
+	top:70px;
+}
+.top110{
+	top:110px;
+}
+.right160{
+	right: 160px;
+}
+.navigate {
+	display: inline-block;
+	_display: inline;
+	width:250px;
+	height:100px;
+	position: absolute;
+	_top:58px;
+	_left:10px;
+	z-index: 10;
+	_zoom:1;
+}
+.navigate ul{
+	padding-left: 0px;
+}
+.navigate li{
+	border-left:5px solid #fff;
+	width: 100%;
+	height: 100%;
+	display: block;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 50px;
+	font-size: 18px;
+	color: #000;
+	letter-spacing: 2px;
+	cursor:pointer;
+}
+.navigate li.active{
+	border-left:5px solid #0088cc;
+	background-color: #f5f5f5;
+	color: #0088cc;
+}
+.navigate a,
+.navigate a:hover
+{
+	width: 100%;
+	height: 100%;
+	display: block;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 50px;
+	font-size: 18px;
+	color: #000;
+	letter-spacing: 2px;
+}
+.navigate .active a,
+.navigate .active a:hover
+{
+	color: #0088cc;
+}
+.info-box{
+	width: 100%;
+	padding: 5px;
+	padding-bottom: 50px;
+}
+.info-box img{
+	margin: 0px;
+}
+.info-img{
+	z-index: 0;
+}
+.shadow-img{
+	z-index: 1;
+}
+.info-img span{
+	background-color: #fff;
+}
+.info-img ul{
+	padding-left: 0px;
+	float: left;
+	clear:both;
+}
+.info-img ul li{
+	float: left;
+	margin-right:30px;
+}
+.align-bottom{
+	display: block;
+	margin-top: -100px;
+}
+.align-bottom ul{
+	display: block;
+	position: relative;
+	width:100%;
+}
+.align-bottom ul li{
+	height:249px;
+	width:240px;
+	margin-right:0px;
+	line-height: 249px;
+	position:relative;
+}
+.align-bottom img,
+.align-bottom span
+{
+	vertical-align: bottom;
+	position: absolute;
+	bottom: 0px;
+}
+.gray-bg{
+	background-color: #f8f8f8;
+}
+
+.orange{
+	color: #ff9900;
+}
+.pink{
+	color: #fd2231;
+}
+
+.info-box h2,
+.info-box h3
+{
+	position: relative;
+	z-index: 2;
+	margin-bottom: 5px;
+}
+
+.info-box h2
+{
+	font-size: 31.5px;
+}
+
+.info-box h3{
+	font-size: 24px;
+}
+
+.info-box p{
+	position: relative;
+	z-index: 2;
+	line-height: 27px;
+}
+
+.info-box-first{
+	padding-bottom: 0px;
+}
+.info-box-first h2,
+.info-box-first h3
+{
+	margin-left:300px;
+}
+.info-box-first p{
+	margin-left:300px;
+}
+.info-box-first span{
+	width: 100%;
+	display: block;
+}
+span.marginL300{
+	width:auto;
+}
+.center{
+	text-align: center;
+}
+#business{
+	height:362px;
+}
+#business h3{
+	margin-top:90px;
+	margin-bottom: 15px;
+}
+#exhibition{
+	height:314px;
+}
+#equipment{
+	height:352px;
+}
+#join{
+	height:282px;
+}
+#webshop{
+	height:369px;
+}
+
+#break{
+
+}
+#combo{
+	height: 400px;
+	z-index: 1;
+}
+#advantage{
+	height: 300px;
+	padding-top: 63px;
+	_margin-top: -60px;
+}
+#equipment{
+	z-index: 3;
+}
+#more{
+	padding-bottom: 0px;
+	_padding-bottom: 100px;
+}
+#webshop{
+	z-index: 1;
+}
+.contact-bg{
+	width: 978px;
+	height: 56px;
+	color: #eee;
+	line-height: 56px;
+	background-color: transparent;
+	background-image: url(../../image/userCenter/contact_bg.png);
+	background-position: 0% 0%;
+	background-repeat: no-repeat;
+}
+.phone-number{
+	float: left;
+	margin-left: 49px;
+	font-size: 23px;
+	color: #eee;
+	vertical-align: middle;
+	display: inline;
+}
+.contact-wrap{
+	margin-left: 334px;
+	display: block;
+	line-height: 56px;
+	height: 56px;
+}
+#contactForm{
+	display: inline-block;
+	_display:inline;
+	_zoom:1;
+	_margin-top: 10px;
+	vertical-align: middle;
+}
+#contactForm label.lb{
+	font-size: 23px;
+	vertical-align: middle;
+	margin-left: 18px;
+	margin-bottom: 0px;
+	margin-top: 3px;
+	_height:30px;
+	_margin-top:0px;
+}
+#contactForm input.ip{
+	height: 21px;
+	width: 127px;
+	border:none;
+	vertical-align: middle;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+input.submit-bg{
+	color: #eee;
+	height: 29px;
+	width: 88px;
+	margin-left: 14px;
+	background-color: #fe9c00;
+	border: none;
+	font-weight: bold;
+	font-size: 18px;
+	padding: 5px;
+}
+.fl{
+	float: left;
+}
+#toMake
+{
+	font-size:16px;
+	width:280px;
+	margin:0 auto;
+	height:30px;
+	color: #ffffff;
+	background-color: #f90;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	border: 1px solid #cccccc;
+	letter-spacing: 1px;
+	border-radius:5px;
+	cursor:pointer;
+}

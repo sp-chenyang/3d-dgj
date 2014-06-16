@@ -101,14 +101,31 @@
 				}
 			});
 		}
-		
-		$('.category_wrap').mouseenter(function(){
+		$('.cate_li').mouseenter(function(){
+			var html ="";
+			if(this.id=="li_1"){
+				html = "<div class='categoryTwo'><a target='_blank' href='http://3dly.net/zr/'>中如技术有限公司</a></div>"+
+				        "<div class'categoryTwo'><a target='_blank' href='http://3dly.net/kaiqishukong/'>北京凯奇数控成套设备有限公司</a></div>";
+				$(".category").html(html);
+			};
+			if(this.id=="li_2"){
+				html = "";
+				$(".category").html(html);
+			};
+			if(this.id=="li_3"){
+				html = "";
+				$(".category").html(html);
+			};
 			showCategoryDetail();
-			
 		});
+		
+		// $('.cate_li').mouseleave(function(){
+		// });
 		$('.category_wrap').mouseleave(function(){
 			hideCategoryDetail();
 		});
+		
+		
 	});
 
 	function showCategoryDetail(){
@@ -117,11 +134,10 @@
 		// }
 		//alert(1);
 		//$('.category_detail').css({"width":"0px"});
-		//______________________________________________________
-		//$('.category_detail').css("display","block");
-		//$('.category_detail').animate({
-		//	'width':'745px'
-		//},300);
+		$('.category_detail').css("display","block");
+		$('.category_detail').animate({
+			'width':'745px'
+		},300);
 	}
 
 	function hideCategoryDetail(){
